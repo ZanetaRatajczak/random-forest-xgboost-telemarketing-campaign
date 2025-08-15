@@ -13,7 +13,8 @@ with a particular focus on how **data balancing techniques** (SMOTE, class weigh
 influence model performance on an **imbalanced dataset**.
 
 ## Key findings
-- **XGBoost** consistently outperformed Random Forest in all scenarios, achieving **AUC > 70%**.  
+- cross-validation was applied in all experiments — **AUC > 70%** for every model and dataset variant.
+- In direct comparisons, **XGBoost** consistently outperformed Random Forest across all dataset configurations (unbalanced, reduced, SMOTE-balanced, weighted).
 - **Data reduction** significantly improved sensitivity (better at identifying positive cases).  
 - **SMOTE** improved precision (fewer false positives).  
 - Class weighting improved results for XGBoost, but worsened them for Random Forest.  
